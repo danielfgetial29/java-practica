@@ -9,7 +9,7 @@ out/
 
 # Archivos compilados
 *.class
-out/
+
 
 # Otros archivos temporales
 *.log
