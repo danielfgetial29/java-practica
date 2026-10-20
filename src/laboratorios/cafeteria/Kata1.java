@@ -10,13 +10,25 @@ public class Kata1 {
         Scanner scanner = new Scanner(System.in);
 
         // Toma de valores desde la consola
-        System.out.println("Ingrese valor de la cuenta: ");
+        System.out.print("Ingresa el total de la cuenta: ");
         int valorCuenta = scanner.nextInt();
 
-        System.out.println("Ingrese porcentaje de la propina: ");
+        System.out.print("Ingresa el porcentaje de propina: ");
         int porcentajePropina = scanner.nextInt();
 
-        // Variables
+        // Validar valores
+        if (!checkValues(valorCuenta, porcentajePropina)){
+            return;
+        }
+
+        int propina = calculateTip(valorCuenta,porcentajePropina);
+        int totalCuenta = valorCuenta + propina;
+
+        // Mensajes de la cuenta
+        System.out.println("Propina: $"+propina);
+        System.out.println("Total a pagar: $"+ totalCuenta);
+        tipMessage(porcentajePropina);
+
 
 
 
@@ -27,22 +39,19 @@ public class Kata1 {
 //    Metodos
 
     /**
-     * Calcula el valor total de una cuenta basandose en su valor neto
-     * y su porcentjae de propina
-     *
+     * Calcula el valor de la propina de una cuenta
       * @param cuenta
      * @param porcentaje
      * @return
      */
     public static int calculateTip(int cuenta, int porcentaje){
-
         // Se calcula el valor de la propina segun el porcentaje
-        int tip = (cuenta * porcentaje)/ 100;
-
-        // Se suma el valor de la propina para calcular el valor total de la cuenta
-        int totalTip = cuenta + tip;
-        return  totalTip;
+        return (cuenta * porcentaje)/ 100;
     }
+
+//    public static int totalCuenta(int cuenta, int propina){
+//        return cuenta + propina;
+//    }
 
     /**
      * Imprime por consola un mensaje dependiendo del valor ingresado en la propina
