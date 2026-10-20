@@ -5,15 +5,22 @@ public class Kata1 {
 
     public static void main(String[] args) {
 //        Calculadora de propinas
-    int valorCuenta = 450;
-    int porcentajePropina = 4;
+
+        //Inicializo la clase Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Toma de valores desde la consola
+        System.out.println("Ingrese valor de la cuenta: ");
+        int valorCuenta = scanner.nextInt();
+
+        System.out.println("Ingrese porcentaje de la propina: ");
+        int porcentajePropina = scanner.nextInt();
+
+        // Variables
 
 
 
-    int totalCuenta = calculateTip(valorCuenta, porcentajePropina);
-
-    System.out.println(totalCuenta);
-    tipMessage(porcentajePropina);
+        checkValues(valorCuenta, porcentajePropina);
 
     }
 
@@ -57,11 +64,15 @@ public class Kata1 {
      * @param cuenta
      * @param porcentaje
      */
-    public static void checkValues(int cuenta, int porcentaje){
+    public static boolean checkValues(int cuenta, int porcentaje){
         if (cuenta <= 0){
             System.out.println("Error: Total invalido");
+            return false;
         } else if ( porcentaje <0 || porcentaje > 100) {
             System.out.println("Error: Porcentaje invalido");
+            return  false;
         }
+        else
+            return true;
     }
 }
