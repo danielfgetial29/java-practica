@@ -1,4 +1,5 @@
 package laboratorios.cafeteria;
+import java.util.Scanner;
 
 public class Kata1 {
 
@@ -36,12 +37,31 @@ public class Kata1 {
         return  totalTip;
     }
 
+    /**
+     * Imprime por consola un mensaje dependiendo del valor ingresado en la propina
+     *
+     * @param porcentaje
+     */
     public static void tipMessage(int porcentaje){
 
         if (porcentaje >30) {
             System.out.println("¡Propina generosa! Eres el mejor😊");
         } else if (porcentaje <5) {
             System.out.println("Propina muy baja, Tacaño😒");
+        }
+    }
+
+    /**
+     * Evalua que el valor de la cuenta no sea negativo y el valor del porcentaje este
+     * entre 0 y 100
+     * @param cuenta
+     * @param porcentaje
+     */
+    public static void checkValues(int cuenta, int porcentaje){
+        if (cuenta <= 0){
+            System.out.println("Error: Total invalido");
+        } else if ( porcentaje <0 || porcentaje > 100) {
+            System.out.println("Error: Porcentaje invalido");
         }
     }
 }
