@@ -16,6 +16,8 @@ public class Kata1 {
         System.out.print("Ingresa el porcentaje de propina: ");
         int porcentajePropina = scanner.nextInt();
 
+        scanner.close();
+
         // Validar valores
         if (!checkValues(valorCuenta, porcentajePropina)){
             return;
@@ -25,14 +27,9 @@ public class Kata1 {
         int totalCuenta = valorCuenta + propina;
 
         // Mensajes de la cuenta
-        System.out.println("Propina: $"+propina);
-        System.out.println("Total a pagar: $"+ totalCuenta);
+        System.out.println("Propina: $"+ String.format("%,d", propina));
+        System.out.println("Total a pagar: $"+ String.format("%,d",totalCuenta));
         tipMessage(porcentajePropina);
-
-
-
-
-        checkValues(valorCuenta, porcentajePropina);
 
     }
 
