@@ -5,22 +5,28 @@ public class Kata2 {
     public static void main(String[] args){
         // Clasificador de bebidas
 
-        double temp = 29.00;
+        double temp = 30;
+        String bebida = "Cafe";
         String clasificacion = clasificarTemperatura(temp);
-        System.out.print(clasificacion);
+
+//        infoBedidas(bebida,clasificacion);
+        System.out.printf(bebida + ": " + clasificacion);
 
     }
 
     // Metodos
     public static String clasificarTemperatura(double temperatura){
-        String clasificacion = " ";
 
         if (temperatura > 60){
-            return clasificacion = "Caliente";
+            return "Caliente";
         } else if (temperatura < 30) {
-            return clasificacion = "Fría";
+            return "Fría";
         }
         else
-            return clasificacion = "Templada";
+            return "Templada";
     }
+
+//    public static void infoBedidas(String bebida, String temp){
+//        System.out.println(bebida + ": "+ temp);
+//    }
 }
