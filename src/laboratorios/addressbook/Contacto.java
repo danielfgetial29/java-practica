@@ -36,4 +36,10 @@ public class Contacto {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    // Metodo soobrescrito
+    @Override
+    public String toString(){
+        return nombre + " | Telefono: " + telefono + " | Email: " + email;
+    }
 }
