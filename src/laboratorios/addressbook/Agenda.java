@@ -55,6 +55,10 @@ public class Agenda {
         return true;
     }
 
+    /**
+     * Muestra la lista en orden alfabetico (TreeMap), duevelve las claves
+     * ordenadas de manera alfabetica
+     */
     public void listarContactos(){
         for (Contacto c: contactos.values()){
             System.out.println(c);
