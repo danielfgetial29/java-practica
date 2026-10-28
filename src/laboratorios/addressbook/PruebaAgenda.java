@@ -32,9 +32,18 @@ public class PruebaAgenda {
         System.out.println("\nlistar grupos");
         agenda.listarGrupos();
 
-        System.out.println("Criterios: 11, 12, 13: agregar a grupo");
+        System.out.println("\nCriterios: 11, 12, 13: agregar a grupo");
         agenda.agregarContactoAGrupo("Ana Perez", "Trabajo");
         agenda.agregarContactoAGrupo("Pedro", "Trabajo");
         agenda.agregarContactoAGrupo("Ana Perez", "Gimnasio");
+
+        System.out.println("\nCriterios: 14, 15, 16: mostrar por grupo");
+        agenda.mostrarContactosPorGrupo("Trabajo");
+        System.out.println(" ");
+        agenda.mostrarContactosPorGrupo("Familia");
+        System.out.println(" ");
+        agenda.mostrarContactosPorGrupo("Gimnasio");
+        System.out.println("");
+
     }
 }

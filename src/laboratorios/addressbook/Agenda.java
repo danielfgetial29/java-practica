@@ -118,6 +118,24 @@ public class Agenda {
         }
     }
 
-
-
+    /**
+     *
+     * @param nombreGrupo
+     */
+    public void mostrarContactosPorGrupo(String nombreGrupo) {
+        if (!grupos.contains(nombreGrupo)) {
+            System.out.println("Error: El grupo '" + nombreGrupo + "' no existe");
+            return;
+        }
+        Set<String> nombres = contactosPorGrupo.get(nombreGrupo);
+        if (nombres.isEmpty()) {
+            System.out.println("El grupo '" + nombreGrupo + "' no tiene contactos");
+            return;
+        }
+        System.out.println("Contactos en '" + nombreGrupo + "':");
+        for (String nombre : nombres) {
+            // Con el nombre buscamos el objeto Contacto completo en el Map
+            System.out.println("- " + contactos.get(nombre));
+        }
+    }
 }
