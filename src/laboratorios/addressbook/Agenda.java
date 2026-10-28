@@ -90,6 +90,24 @@ public class Agenda {
         System.out.println("Grupo '" + nombreGrupo + "' creado");
     }
 
+    /**
+     * Valida que tanto el nombre como el grupo existan para poder realizar la inserccion
+     * @param nombreContacto
+     * @param nombreGrupo
+     */
+    public void agregarContactoAGrupo(String nombreContacto, String nombreGrupo) {
+        if (!contactos.containsKey(nombreContacto)) {
+            System.out.println("Error: El contacto '" + nombreContacto + "' no existe");
+            return;
+        }
+        if (!grupos.contains(nombreGrupo)) {
+            System.out.println("Error: El grupo '" + nombreGrupo + "' no existe");
+            return;
+        }
+        contactosPorGrupo.get(nombreGrupo).add(nombreContacto);
+        System.out.println("Contacto agregado al grupo '" + nombreGrupo + "'");
+    }
+
 
 
 }
