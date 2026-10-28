@@ -109,11 +109,12 @@ public class Agenda {
     }
 
     /**
-     *
+     * Muestra los grupos en orden alfabetico ya que
+     * TreeSet lo hace de manera automatica al guardar los datos
      */
     public void listarGrupos() {
-        for (String g : grupos) {
-            System.out.println("- " + g);
+        for (String grupo : grupos) {
+            System.out.println("- " + grupo);
         }
     }
 
