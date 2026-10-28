@@ -119,7 +119,8 @@ public class Agenda {
     }
 
     /**
-     *
+     * Asocia que el grupo exista y que tenga datos, ya despues muestra los nombres
+     * dentro de los grupos
      * @param nombreGrupo
      */
     public void mostrarContactosPorGrupo(String nombreGrupo) {
