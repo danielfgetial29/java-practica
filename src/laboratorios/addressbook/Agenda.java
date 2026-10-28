@@ -11,6 +11,11 @@ public class Agenda {
     private List<Contacto> historial = new ArrayList<>();
 
     // Metodos
+
+    /**
+     * metodo que registra un contacto y valida que no exista su nombre
+     * @param c (contacto)
+     */
     public void agregarContacto(Contacto c){
         if (contactos.containsKey(c.getNombre())){
             System.out.println("Error: Ya existe un contacto con el nombre "+ c.getNombre());
@@ -21,5 +26,17 @@ public class Agenda {
         System.out.println("Contacto agregado: "+ c.getNombre());
 
     }
+
+    /**
+     * Devuelve el contacto si existe segun el nombre, si no devuelve null,
+     * ya que el menu principal devolvera el mensaje de que no existe
+     * @param nombre
+     * @return
+     */
+    public Contacto buscarContacto(String nombre){
+        return contactos.get(nombre);
+    }
+
+
 
 }
