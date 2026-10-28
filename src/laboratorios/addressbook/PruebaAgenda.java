@@ -20,5 +20,8 @@ public class PruebaAgenda {
 
         System.out.println("\nCriterio 7: Listar contactos alfabeticamente ");
         agenda.listarContactos();
+
+        System.out.println("\nCriterio 8; Mostra el historial");
+        agenda.listarHistorial();
     }
 }

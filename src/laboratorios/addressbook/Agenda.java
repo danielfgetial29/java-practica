@@ -65,6 +65,16 @@ public class Agenda {
         }
     }
 
+    /**
+     * Muestra el historial en orden que se insertaron los datos
+     *
+     */
+    public void listarHistorial(){
+        for(Contacto c: historial){ // ArrayList devuevle los valores estrictamente en el orden que se insertaron
+            System.out.println(c);
+        }
+    }
+
 
 
 }
