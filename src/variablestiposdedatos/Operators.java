@@ -34,5 +34,19 @@ public class Operators {
         System.out.println(a < b); // Menor
         System.out.println(a <= b); // Menor o igual
 
+        // Operadores logicos
+        // Y (AND)
+        // solo es true si ambos son verdaderos
+        System.out.println(true && true); // true
+        System.out.println(true && false);
+        System.out.println(false && true);
+        System.out.println(false && false);
+
+        // O (OR)
+        // si solo uno es verdadero sera = true
+        System.out.println(true || true);
+        System.out.println(true || false);
+        System.out.println(false || true);
+        System.out.println(false || false); // false
     }
 }
