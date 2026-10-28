@@ -25,5 +25,14 @@ public class Operators {
         System.out.println(a);
         a *= 1;
         System.out.println(a);
+
+        // Comparacion (Relacionales)
+        System.out.println(a == b); // igualdad
+        System.out.println(a != b); // diferente
+        System.out.println(a > b); // Mayor
+        System.out.println(a >= b); // Mayor o igual
+        System.out.println(a < b); // Menor
+        System.out.println(a <= b); // Menor o igual
+
     }
 }
