@@ -23,5 +23,10 @@ public class PruebaAgenda {
 
         System.out.println("\nCriterio 8; Mostra el historial");
         agenda.listarHistorial();
+
+        System.out.println("Criterio 9 y 10: grupos");
+        agenda.agregarGrupo("Trabajo");
+        agenda.agregarGrupo("Familia");
+        agenda.agregarGrupo("Trabajo");
     }
 }

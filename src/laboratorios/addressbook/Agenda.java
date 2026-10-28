@@ -75,6 +75,16 @@ public class Agenda {
         }
     }
 
+    // Grupos
+    public void agregarGrupo(String nombreGrupo) {
+        if (!grupos.add(nombreGrupo)) {
+            System.out.println("Error: El grupo '" + nombreGrupo + "' ya existe");
+            return;
+        }
+        contactosPorGrupo.put(nombreGrupo, new TreeSet<>());
+        System.out.println("Grupo '" + nombreGrupo + "' creado");
+    }
+
 
 
 }
