@@ -55,6 +55,12 @@ public class Agenda {
         return true;
     }
 
+    public void listarContactos(){
+        for (Contacto c: contactos.values()){
+            System.out.println(c);
+        }
+    }
+
 
 
 }
