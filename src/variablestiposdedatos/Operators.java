@@ -13,5 +13,17 @@ public class Operators {
         System.out.println( a * b); // Multiplicacion
         System.out.println( a / b); // division
         System.out.println( a % b); // Modulo (sobrante) de la divison
+
+        // Asignacion
+        a = b;
+        System.out.println(a);
+
+        // Valores de asignacion directos
+        a += 1;
+        System.out.println(a);
+        a -= 2;
+        System.out.println(a);
+        a *= 1;
+        System.out.println(a);
     }
 }
