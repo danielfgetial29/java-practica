@@ -17,7 +17,7 @@ public class Agenda {
      * @param c (contacto)
      */
     public void agregarContacto(Contacto c){
-        if (contactos.containsKey(c.getNombre())){
+        if (contactos.containsKey(c.getNombre())){ //containsKey comprubea si esa llave existe dentro del map
             System.out.println("Error: Ya existe un contacto con el nombre "+ c.getNombre());
             return;
         }
@@ -35,6 +35,24 @@ public class Agenda {
      */
     public Contacto buscarContacto(String nombre){
         return contactos.get(nombre);
+    }
+
+    /**
+     * Elimina el dato de contactos y lo va eliminando de todas partes, si no
+     * existe el valor en contactos sale del metodo
+     * @param nombre
+     * @return
+     */
+    public boolean eliminarContacto(String nombre){
+        Contacto c = contactos.remove(nombre); // Elimina un elemento especifico de una estructura de datos y captura su valor
+        if (c == null){
+            return false; // en este caso no existe el nombre
+        }
+        historial.remove(c); // Elimina del historial
+        for (Set<String> miembros: contactosPorGrupo.values()){
+           miembros.remove(nombre); // de los grupos
+        }
+        return true;
     }
 
 
