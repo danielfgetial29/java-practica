@@ -94,6 +94,8 @@ public class MenuPrincipal {
             }
         }
 
+        scanner.close();
+
     }
 
     private static void mostrarMenu() {
