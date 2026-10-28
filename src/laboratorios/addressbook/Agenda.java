@@ -108,6 +108,15 @@ public class Agenda {
         System.out.println("Contacto agregado al grupo '" + nombreGrupo + "'");
     }
 
+    /**
+     *
+     */
+    public void listarGrupos() {
+        for (String g : grupos) {
+            System.out.println("- " + g);
+        }
+    }
+
 
 
 }
