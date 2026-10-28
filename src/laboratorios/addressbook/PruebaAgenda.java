@@ -6,6 +6,44 @@ public class PruebaAgenda {
 
         System.out.println("Agregar nuevo y dato duplicado");
         agenda.agregarContacto(new Contacto("Daniel getial", "10000000000", "daniel@gmail.com"));
+        agenda.agregarContacto(new Contacto("Carlos Gomez", "555-5678", "carlos@email.com"));
+        agenda.agregarContacto(new Contacto("Ana Perez", "555-1234", "ana@email.com"));
         agenda.agregarContacto(new Contacto("Daniel getial", "0000000000", "felipe@gmail.com"));
+
+        System.out.println("\nCriterios 3 y 4: Buscar contactos existentes");
+        System.out.println(agenda.buscarContacto("Daniel getial"));
+        System.out.println(agenda.buscarContacto("felipe"));
+
+        System.out.println("\nCriterio 5 y 6: Eliminar contacto");
+        System.out.println(agenda.eliminarContacto("Daniel getial")); // Elimina dato existente (true)
+        System.out.println(agenda.eliminarContacto("Daniel getial")); // Ya no existe el dato (false)
+
+        System.out.println("\nCriterio 7: Listar contactos alfabeticamente ");
+        agenda.listarContactos();
+
+        System.out.println("\nCriterio 8; Mostra el historial");
+        agenda.listarHistorial();
+
+        System.out.println("\nCriterio 9 y 10: grupos");
+        agenda.agregarGrupo("Trabajo");
+        agenda.agregarGrupo("Familia");
+        agenda.agregarGrupo("Trabajo");
+
+        System.out.println("\nlistar grupos");
+        agenda.listarGrupos();
+
+        System.out.println("\nCriterios: 11, 12, 13: agregar a grupo");
+        agenda.agregarContactoAGrupo("Ana Perez", "Trabajo");
+        agenda.agregarContactoAGrupo("Pedro", "Trabajo");
+        agenda.agregarContactoAGrupo("Ana Perez", "Gimnasio");
+
+        System.out.println("\nCriterios: 14, 15, 16: mostrar por grupo");
+        agenda.mostrarContactosPorGrupo("Trabajo");
+        System.out.println(" ");
+        agenda.mostrarContactosPorGrupo("Familia");
+        System.out.println(" ");
+        agenda.mostrarContactosPorGrupo("Gimnasio");
+        System.out.println("");
+
     }
 }
