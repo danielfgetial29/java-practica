@@ -76,8 +76,13 @@ public class Agenda {
     }
 
     // Grupos
+
+    /**
+     * Agrega grupos dependiendo si no existen, si ya existen arroja un mensaje
+     * @param nombreGrupo
+     */
     public void agregarGrupo(String nombreGrupo) {
-        if (!grupos.add(nombreGrupo)) {
+        if (!grupos.add(nombreGrupo)) { // devuelve false si ya existe el grupo por lo que se niega (true) para que entre en la validacion y muestre el mensaje
             System.out.println("Error: El grupo '" + nombreGrupo + "' ya existe");
             return;
         }
