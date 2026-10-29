@@ -18,5 +18,7 @@ public class Entradas {
         // Muestra el mensaje que ingreso el usuario
         System.out.println("\nMensaje capturado...");
         System.out.println(mensaje);
+
+        scanner.close();
     }
 }
