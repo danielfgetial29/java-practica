@@ -9,6 +9,9 @@ public class StringExercises {
         System.out.println(cadena1 + cadena2);
 
         // 2. Muestra la longitud de una cadena de texto.
+        String c1 = "Estoy aprendiendo sobre las cadenas de texto";
+        int longitud = c1.length();
+        System.out.println(longitud);
 
         // 3. Muestra el primer y último carácter de un string.
 
