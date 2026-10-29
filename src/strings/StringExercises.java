@@ -14,6 +14,12 @@ public class StringExercises {
         System.out.println(longitud);
 
         // 3. Muestra el primer y último carácter de un string.
+        String c2 = "Aprendiendo";
+        char primeroCaracter = c2.charAt(0);
+        char ultimoCaracter = c2.charAt(c2.length()-1);
+
+        System.out.println("Primer caracter: "+primeroCaracter+" ultimo caracter "+ ultimoCaracter);
+
 
         // 4. Convierte a mayúsculas y minúsculas un string.
 
