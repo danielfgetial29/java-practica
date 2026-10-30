@@ -15,5 +15,12 @@ public class Condicionales {
             System.out.println("¡Ticket de exceso de velocidad!");
         }
 
+        // Programa Orwell
+        System.out.println("Ingrese un entero:");
+        int entrada = Integer.valueOf(scanner.nextLine());
+
+        if (entrada == 1984){
+            System.out.println("Orwell");
+        }
     }
 }
