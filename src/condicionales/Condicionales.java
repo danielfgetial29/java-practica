@@ -22,5 +22,18 @@ public class Condicionales {
         if (entrada == 1984){
             System.out.println("Orwell");
         }
+
+        // Condion con else (otro)
+        System.out.println("Ingrese un numero entero: ");
+        int entero = Integer.valueOf(scanner.nextLine());
+
+        if (entero > 0){
+            System.out.println("El numero es positivo");
+
+        }else {
+            System.out.println("El numero es negativo");
+        }
+
+        scanner.close();
     }
 }
