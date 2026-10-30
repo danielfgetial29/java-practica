@@ -30,7 +30,10 @@ public class StringExercises {
         System.out.println("\nEstoy aprendiendo Java". contains("Java"));
 
         // 6. Formatea un string con un entero.
-
+        String numero = "25";
+        int numero_convertido = Integer.valueOf(numero);
+        // Imprime el tipo de dato en la consola
+        System.out.println(((Object) numero_convertido).getClass().getSimpleName()); // integer
         // 7. Elimina los espacios en blanco al principio y final de un string.
 
         // 8. Sustituye todos los espacios en blanco de un string por un guión (-).
