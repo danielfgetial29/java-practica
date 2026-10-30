@@ -41,8 +41,21 @@ public class StringExercises {
 
         // 8. Sustituye todos los espacios en blanco de un string por un guión (-).
         System.out.println("  Sustituyendo espacios por (-) ".replace(" ","-") );
+
         // 9. Comprueba si dos strings son iguales.
+        String nombre1 = "Daniel";
+        String nombre2 = "daniel";
+        String nombre3 = "Felipe";
+        System.out.println("\nComparar igualdad con equals(): "+nombre1.equals(nombre2)); //false
+        System.out.println("Comparar sin importar mayuscula o minuscula: "+ nombre1.equalsIgnoreCase(nombre2)); //true
+        System.out.println("Comparar igualdad con equals(): "+nombre1.equals(nombre3)); //false
 
         // 10. Comprueba si dos strings tienen la misma longitud.
+
+        String dato1 = "1234";
+        String dato2 = "1234";
+        String dato3 = "12345";
+        System.out.println(dato1.length() == dato2.length()); //true
+        System.out.println(dato1.length() == dato3.length()); //false
     }
 }
