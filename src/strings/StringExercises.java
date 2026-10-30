@@ -18,10 +18,13 @@ public class StringExercises {
         char primeroCaracter = c2.charAt(0);
         char ultimoCaracter = c2.charAt(c2.length()-1);
 
-        System.out.println("Primer caracter: "+primeroCaracter+" ultimo caracter "+ ultimoCaracter);
-
+        System.out.println("\nPrimer caracter: "+primeroCaracter+" ultimo caracter "+ ultimoCaracter);
 
         // 4. Convierte a mayúsculas y minúsculas un string.
+        String lower_Upeer = "a";
+        String upper_lower = "B";
+        System.out.println("\nConvertido a mayuscula "+lower_Upeer.toUpperCase());
+        System.out.println("Convertido a miniscula" + upper_lower.toLowerCase());
 
         // 5. Comprueba si una cadena de texto contiene una palabra concreta.
 
