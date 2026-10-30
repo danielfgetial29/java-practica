@@ -27,6 +27,7 @@ public class StringExercises {
         System.out.println("Convertido a miniscula" + upper_lower.toLowerCase());
 
         // 5. Comprueba si una cadena de texto contiene una palabra concreta.
+        System.out.println("\nEstoy aprendiendo Java". contains("Java"));
 
         // 6. Formatea un string con un entero.
 
